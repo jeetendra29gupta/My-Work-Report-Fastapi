@@ -1,0 +1,16 @@
+meta {
+  name: Toggle Post Publish Status
+  type: http
+  seq: 8
+}
+
+patch {
+  url: http://127.0.0.1:8181/posts/publish/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

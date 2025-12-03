@@ -1,0 +1,616 @@
+{
+  "info": {
+    "name": "collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Activate the user",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/active/4",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "active",
+                "4"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Change Password",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/password/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "password",
+                "2"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"old_password\": \"sameer18guptaChange\",\n  \"new_password\": \"sameer14gupta\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Change Role",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/role/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "role",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "//############################################\n{\n  \"role\": \"admin\"\n}\n//############################################\n// {\n//   \"role\": \"user\"\n// }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Create New User",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "//###########################################\n\n// {\n//   \"full_name\": \"jeetendra\",\n//   \"email_id\": \"jeetendra29gupta@example.com\",\n//   \"phone_no\": \"9087654321\",\n//   \"password\": \"jeetendra29gupta\"\n// }\n\n//###########################################\n\n// {\n//   \"full_name\": \"sameer\",\n//   \"email_id\": \"sameer14gupta@example.com\",\n//   \"phone_no\": \"9087654321\",\n//   \"password\": \"sameer18guptaChange\"\n// }\n\n//###########################################\n\n// {\n//   \"full_name\": \"Prince Gupta\",\n//   \"email_id\": \"prince14gupta@example.com\",\n//   \"phone_no\": \"9087654321\",\n//   \"password\": \"prince14gupta\"\n// }\n\n//###########################################\n\n// {\n//   \"full_name\": \"Black Rose\",\n//   \"email_id\": \"black_rose@example.com\",\n//   \"phone_no\": \"9087654321\",\n//   \"password\": \"prince14gupta\"\n// }\n\n//###########################################\n\n{\n  \"full_name\": \"Blue Bird\",\n  \"email_id\": \"blue_bird@example.com\",\n  \"phone_no\": \"9999999999\",\n  \"password\": \"blue14bird\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete User",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/5",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "5"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Edit User",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/2",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "2"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "//############################################\n\n// {\n//   \"full_name\": \"Sameer Gupta\"\n// }\n\n//############################################\n\n{\n  \"phone_no\": \"9727655878\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get All Deleted User",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/deleted",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "deleted"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Get User By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/3",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "3"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "List All Active Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                ""
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/users/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "users",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"full_name\": \"Jeetendra Gupta\",\n  \"phone_no\": \"9555613730\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Post",
+      "item": [
+        {
+          "name": "Create Post",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "//#######################################\n// {\n//   \"title\": \"Post Title 1\",\n//   \"content\": \"Post Content 1\"\n// }\n//#######################################\n// {\n//   \"title\": \"Post Title 2\",\n//   \"content\": \"Post Content 2\"\n// }\n//#######################################\n// {\n//   \"title\": \"Post Title 3\",\n//   \"content\": \"Post Content 3\"\n// }\n//#######################################\n{\n  \"title\": \"Post Title 4\",\n  \"content\": \"Post Content 4\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete Post",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Edit Post",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "//########################################\n\n{\n  \"title\": \"Post Title 1 Edited\"\n}\n\n//########################################\n\n// {\n//   \"content\": \"Post Content 3 Edited\"\n// }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get All Deleted Posts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/deleted",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "deleted"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Read All Active Posts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Read Single Post",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Toggle Post Active Status",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/active/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "active",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Toggle Post Publish Status",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/publish/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "publish",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            }
+          }
+        },
+        {
+          "name": "Update Post",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/posts/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "posts",
+                "1"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Post Title 4 Updated\",\n  \"content\": \"Post Content 4 Updated\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}

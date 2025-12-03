@@ -1,0 +1,27 @@
+meta {
+  name: Change Role
+  type: http
+  seq: 9
+}
+
+patch {
+  url: http://127.0.0.1:8181/users/role/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  //############################################
+  {
+    "role": "admin"
+  }
+  //############################################
+  // {
+  //   "role": "user"
+  // }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,16 @@
+meta {
+  name: Activate the user
+  type: http
+  seq: 8
+}
+
+patch {
+  url: http://127.0.0.1:8181/users/active/4
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

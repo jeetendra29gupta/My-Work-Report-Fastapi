@@ -1,0 +1,16 @@
+meta {
+  name: List All Active Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://127.0.0.1:8181/users/
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

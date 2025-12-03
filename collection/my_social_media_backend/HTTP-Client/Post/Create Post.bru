@@ -1,0 +1,39 @@
+meta {
+  name: Create Post
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8181/posts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  //#######################################
+  // {
+  //   "title": "Post Title 1",
+  //   "content": "Post Content 1"
+  // }
+  //#######################################
+  // {
+  //   "title": "Post Title 2",
+  //   "content": "Post Content 2"
+  // }
+  //#######################################
+  // {
+  //   "title": "Post Title 3",
+  //   "content": "Post Content 3"
+  // }
+  //#######################################
+  {
+    "title": "Post Title 4",
+    "content": "Post Content 4"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Update User
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://127.0.0.1:8181/users/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "full_name": "Jeetendra Gupta",
+    "phone_no": "9555613730"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

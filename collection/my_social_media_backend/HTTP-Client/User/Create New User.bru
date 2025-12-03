@@ -1,0 +1,63 @@
+meta {
+  name: Create New User
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8181/users/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  //###########################################
+  
+  // {
+  //   "full_name": "jeetendra",
+  //   "email_id": "jeetendra29gupta@example.com",
+  //   "phone_no": "9087654321",
+  //   "password": "jeetendra29gupta"
+  // }
+  
+  //###########################################
+  
+  // {
+  //   "full_name": "sameer",
+  //   "email_id": "sameer14gupta@example.com",
+  //   "phone_no": "9087654321",
+  //   "password": "sameer18guptaChange"
+  // }
+  
+  //###########################################
+  
+  // {
+  //   "full_name": "Prince Gupta",
+  //   "email_id": "prince14gupta@example.com",
+  //   "phone_no": "9087654321",
+  //   "password": "prince14gupta"
+  // }
+  
+  //###########################################
+  
+  // {
+  //   "full_name": "Black Rose",
+  //   "email_id": "black_rose@example.com",
+  //   "phone_no": "9087654321",
+  //   "password": "prince14gupta"
+  // }
+  
+  //###########################################
+  
+  {
+    "full_name": "Blue Bird",
+    "email_id": "blue_bird@example.com",
+    "phone_no": "9999999999",
+    "password": "blue14bird"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

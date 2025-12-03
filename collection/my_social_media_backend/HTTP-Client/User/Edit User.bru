@@ -1,0 +1,30 @@
+meta {
+  name: Edit User
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://127.0.0.1:8181/users/2
+  body: json
+  auth: inherit
+}
+
+body:json {
+  //############################################
+  
+  // {
+  //   "full_name": "Sameer Gupta"
+  // }
+  
+  //############################################
+  
+  {
+    "phone_no": "9727655878"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
