@@ -1,0 +1,9 @@
+uv init
+uv add fastapi uvicorn sqlmodel email-validator bcrypt pyjwt python-multipart markdown python-dotenv
+uv add --group dev ruff pytest httpx
+uv sync
+
+uv run uvicorn my_social_media_backend.main:app --reload --host 0.0.0.0 --port 8181
+
+uv run ruff check --fix .
+uv run ruff format .
