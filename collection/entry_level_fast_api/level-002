@@ -1,0 +1,4 @@
+CRUD operation in FAST API
+
+Creating an item in FastAPI involves defining a data model for the item,
+creating an API endpoint to handle CRUD operations, and implementing the logic to store and retrieve items.

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Laptop",
+    "price": 1200.99,
+    "is_available": true,
+    "rating": 5,
+    "id": "4f4345ae-427e-4e75-a2c5-e19dd6399b16"
+  },
+  {
+    "name": "Wireless Mouse",
+    "price": 25.5,
+    "is_available": true,
+    "rating": 4,
+    "id": "1485b886-1cc5-4f2c-af7d-9fe0b40bbc70"
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "price": 89.99,
+    "is_available": true,
+    "rating": 5,
+    "id": "4c581147-512a-4842-a59c-3c4f09aa323b"
+  },
+  {
+    "name": "Gaming Monitor",
+    "price": 299.99,
+    "is_available": true,
+    "rating": 5,
+    "id": "7c7eb12c-8f6a-482a-8c13-d580e675576e"
+  },
+  {
+    "name": "USB-C Hub",
+    "price": 49,
+    "is_available": true,
+    "rating": 4,
+    "id": "4148ca60-8403-47a5-bb4f-a3767a58b4a3"
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "is_available": true,
+    "rating": 4,
+    "id": "ad9b2b3c-b0c7-490e-bc0f-f88738134907"
+  },
+  {
+    "name": "External SSD",
+    "price": 139.99,
+    "is_available": true,
+    "rating": 5,
+    "id": "6fa45ba6-1cff-4341-aba8-7e3a35517b2a"
+  },
+  {
+    "name": "Webcam",
+    "price": 79.99,
+    "is_available": true,
+    "rating": 3,
+    "id": "f2da6825-f4cb-4573-8402-cbbc80c3d3f7"
+  },
+  {
+    "name": "Noise-Cancelling Headphones",
+    "price": 189.95,
+    "is_available": true,
+    "rating": 5,
+    "id": "ac2e3329-0a8f-4984-8f25-dd8782104d09"
+  },
+  {
+    "name": "Smartwatch",
+    "price": 249.99,
+    "is_available": true,
+    "rating": 4,
+    "id": "511a3894-f1fb-4700-8789-73926bd3b160"
+  }
+]

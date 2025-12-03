@@ -1,0 +1,63 @@
+# RESTful CRUD Operations
+Operation           HTTP Method	    Endpoint            FastAPI Route Example	            Description
+Create              POST	        /items              @app.post("/items")	                Create a new item
+Read All            GET	            /items              @app.get("/items")	                Retrieve a list of all items
+Read One            GET 	        /items/:id          @app.get("/items/{item_id}")	    Retrieve a specific item by ID
+Update (Full)	    PUT	            /items/:id          @app.put("/items/{item_id}")	    Replace an item completely
+Update (Partial)	PATCH	        /items/:id          @app.patch("/items/{item_id}")	    Update part of an item
+Delete	            DELETE	        /items/:id          @app.delete("/items/{item_id}")	    Delete a specific item by ID
+
+
+[
+  {
+    "name": "Laptop",
+    "price": 1200.99,
+    "rating": 5
+  },
+  {
+    "name": "Wireless Mouse",
+    "price": 25.50,
+    "rating": 4
+  },
+  {
+    "name": "Mechanical Keyboard",
+    "price": 89.99,
+    "rating": 5
+  },
+  {
+    "name": "Gaming Monitor",
+    "price": 299.99,
+    "rating": 5
+  },
+  {
+    "name": "USB-C Hub",
+    "price": 49.00,
+    "rating": 4
+  },
+  {
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "rating": 4
+  },
+  {
+    "name": "External SSD",
+    "price": 139.99,
+    "rating": 5
+  },
+  {
+    "name": "Webcam",
+    "price": 79.99,
+    "rating": 3
+  },
+  {
+    "name": "Noise-Cancelling Headphones",
+    "price": 189.95,
+    "rating": 5
+  },
+  {
+    "name": "Smartwatch",
+    "price": 249.99,
+    "rating": 4
+  }
+]
+
