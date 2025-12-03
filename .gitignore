@@ -15,3 +15,15 @@ wheels/
 
 # Environment variables
 .env
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
