@@ -1,0 +1,29 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8181/products/create
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzY0NjgxMjcwfQ.KxTa8QEZuCkMnRnpPlW-MVis4xnOoorHQHb-Rzgs7sE
+}
+
+body:json {
+  {
+    "name": "Product Name 002",
+    "description": "Product Description P002",
+    "price": 49.79,
+    "in_stock": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

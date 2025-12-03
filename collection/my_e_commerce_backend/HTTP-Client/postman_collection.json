@@ -1,0 +1,140 @@
+{
+  "info": {
+    "name": "collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/auth/signup",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "auth",
+                "signup"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"full_name\": \"Jeetendra Gupta\",\n  \"email_id\": \"jeetendra29gupta@example.com\",\n  \"phone_no\": \"9087654321\",\n  \"password\": \"jeetendra29gupta\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "noauth"
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/auth/login",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "username",
+                  "value": "jeetendra29gupta@example.com",
+                  "disabled": false,
+                  "type": "default"
+                },
+                {
+                  "key": "password",
+                  "value": "jeetendra29gupta",
+                  "disabled": false,
+                  "type": "default"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "item": [
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzY0NjgxMjcwfQ.KxTa8QEZuCkMnRnpPlW-MVis4xnOoorHQHb-Rzgs7sE",
+                "type": "string"
+              }
+            },
+            "description": "",
+            "url": {
+              "raw": "http://127.0.0.1:8181/products/create",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1:8181"
+              ],
+              "path": [
+                "products",
+                "create"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Product Name 002\",\n  \"description\": \"Product Description P002\",\n  \"price\": 49.79,\n  \"in_stock\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": []
+}

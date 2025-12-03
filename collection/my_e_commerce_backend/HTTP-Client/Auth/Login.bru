@@ -1,0 +1,28 @@
+meta {
+  name: Login
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8181/auth/login
+  body: formUrlEncoded
+  auth: inherit
+}
+
+body:json {
+  {
+    "email_id": "jeetendra29gupta@example.com",
+    "password": "jeetendra29gupta"
+  }
+}
+
+body:form-urlencoded {
+  username: jeetendra29gupta@example.com
+  password: jeetendra29gupta
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

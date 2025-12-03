@@ -1,0 +1,171 @@
+{
+  "name": "collection",
+  "version": "1",
+  "items": [
+    {
+      "type": "folder",
+      "name": "Auth",
+      "filename": "Auth",
+      "seq": 1,
+      "examples": [],
+      "root": {
+        "request": {
+          "auth": {
+            "mode": "inherit"
+          }
+        },
+        "meta": {
+          "name": "Auth",
+          "seq": 1
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Signup",
+          "filename": "Signup.bru",
+          "seq": 1,
+          "settings": {
+            "encodeUrl": true,
+            "timeout": 0
+          },
+          "tags": [],
+          "examples": [],
+          "request": {
+            "url": "http://127.0.0.1:8181/auth/signup",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"full_name\": \"Jeetendra Gupta\",\n  \"email_id\": \"jeetendra29gupta@example.com\",\n  \"phone_no\": \"9087654321\",\n  \"password\": \"jeetendra29gupta\"\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        },
+        {
+          "type": "http",
+          "name": "Login",
+          "filename": "Login.bru",
+          "seq": 2,
+          "settings": {
+            "encodeUrl": true,
+            "timeout": 0
+          },
+          "tags": [],
+          "examples": [],
+          "request": {
+            "url": "http://127.0.0.1:8181/auth/login",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "formUrlEncoded",
+              "json": "{\n  \"email_id\": \"jeetendra29gupta@example.com\",\n  \"password\": \"jeetendra29gupta\"\n}",
+              "formUrlEncoded": [
+                {
+                  "name": "username",
+                  "value": "jeetendra29gupta@example.com",
+                  "enabled": true
+                },
+                {
+                  "name": "password",
+                  "value": "jeetendra29gupta",
+                  "enabled": true
+                }
+              ],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "inherit"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "Product",
+      "filename": "Product",
+      "seq": 2,
+      "examples": [],
+      "root": {
+        "request": {
+          "auth": {
+            "mode": "inherit"
+          }
+        },
+        "meta": {
+          "name": "Product",
+          "seq": 2
+        }
+      },
+      "items": [
+        {
+          "type": "http",
+          "name": "Create Product",
+          "filename": "Create Product.bru",
+          "seq": 1,
+          "settings": {
+            "encodeUrl": true,
+            "timeout": 0
+          },
+          "tags": [],
+          "examples": [],
+          "request": {
+            "url": "http://127.0.0.1:8181/products/create",
+            "method": "POST",
+            "headers": [],
+            "params": [],
+            "body": {
+              "mode": "json",
+              "json": "{\n  \"name\": \"Product Name 002\",\n  \"description\": \"Product Description P002\",\n  \"price\": 49.79,\n  \"in_stock\": true\n}",
+              "formUrlEncoded": [],
+              "multipartForm": [],
+              "file": []
+            },
+            "script": {},
+            "vars": {},
+            "assertions": [],
+            "tests": "",
+            "docs": "",
+            "auth": {
+              "mode": "bearer",
+              "bearer": {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzY0NjgxMjcwfQ.KxTa8QEZuCkMnRnpPlW-MVis4xnOoorHQHb-Rzgs7sE"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "environments": [],
+  "brunoConfig": {
+    "version": "1",
+    "name": "collection",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "size": 0,
+    "filesCount": 0
+  }
+}

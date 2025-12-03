@@ -1,0 +1,25 @@
+meta {
+  name: Signup
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8181/auth/signup
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "full_name": "Jeetendra Gupta",
+    "email_id": "jeetendra29gupta@example.com",
+    "phone_no": "9087654321",
+    "password": "jeetendra29gupta"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
